@@ -44,11 +44,12 @@ body {
 
 /* ヘッター */
 
-.div_box{
+/* .div_box{
 	display: flex;
 }
 
 header img {
+	display: block;
 	width: 100%;
 }
 
@@ -57,8 +58,39 @@ header img {
 	list-style: none;
 	gap: 20px;
 	margin-left: auto;
+}  */
+
+.background {
+	background-image: url(../portfolio/image/top.jpg);
+	width: 100%;
+	height: 90vh;
+	background-size: cover;
 }
 
+.top_logo {
+	position: fixed;
+	z-index: 10;
+	left: 70%;
+}
+
+li {
+	list-style: none;
+	font-size: 1.5rem;
+}
+
+.top_logo a{
+	color: #ffffff;
+	padding-left: 20px;
+}
+
+.background h4 {
+	color: #ffffff;
+	font-size: 70px;
+	position: absolute;
+	top: 10%;
+	left: 75%;
+	transform: skewX(-15deg); 
+}
 /* ここまで */
 
 /* ABOUT */
@@ -69,10 +101,10 @@ header img {
 
 .ABOUT_box2 span{
 	display: block;
-	margin-top: 1px;
+	margin-top: 1px; 
 	display: block; /* 改行して真下に配置 */
 	font-size: 17px; /* 真下の文字の大きさ */
-	font-weight: normal; /* 真下の文字の太さ */
+	font-weight: normal; /* 真下の文字の太さ */ 
 }
 
 .ABOUT {
@@ -82,19 +114,19 @@ header img {
 
 .ABOUT .image{
 	width: 50%;
-	margin: 0;
-	padding: 0;
-} 
+	/* margin: 0;
+	padding: 0; */
+}  
 
-.ABOUT .image img {
+/* .ABOUT .image img {
   width: 100%;
   height: auto;
-}
+} */
 
-.ABOUT .right {
+/* .ABOUT .right {
   margin: 0 0 0 20px;
   padding: 0;
-}
+} */
 
 .ABOUT .title {
   margin: 0;
@@ -102,10 +134,10 @@ header img {
   font-weight: bold;
   font-size: 18px;
 }
-.ABOUT .text {
+/* .ABOUT .text {
   margin: 10px 0 0;
   padding: 0;
-}
+} */
 
 .text2 p{
 	margin: 0;
@@ -113,7 +145,11 @@ header img {
 
 .ABOUT_box {
 	margin-top: 100px;
-}
+} 
+
+/* .ABOUT p{
+	padding: 10px 1%;
+}  */
 
 /* ここまで */
 
@@ -130,9 +166,9 @@ header img {
 .works2 span{
 	display: block;
 	margin-top: 1px;
-	display: block; /* 改行して真下に配置 */
-	font-size: 17px; /* 真下の文字の大きさ */
-	font-weight: normal; /* 真下の文字の太さ */
+	display: block; /* 改行して真下に配置 */ 
+	font-size: 17px;  /* 真下の文字の大きさ */ 
+	font-weight: normal;  /* 真下の文字の太さ */
 }
 
 a{
@@ -160,7 +196,7 @@ a{
 
 .web-box p:hover{
 	text-decoration: underline;
-}
+} 
 
 
 /* ここまで */
@@ -172,7 +208,7 @@ a{
 	height: 250px;
 }
 
-/* .disney-box p{
+/* .ここはなし disney-box p{
 	color: black;
 	text-decoration-line： none;
 } */
@@ -190,7 +226,7 @@ a{
 	height: 250px;
 }
 
-/* .memo-box p{
+/* .ここはなしmemo-box p{
 	color: black;
 	text-decoration-line： none;
 } */
@@ -219,7 +255,8 @@ ul {
 
 .footer li {
 	list-style: none;
-}
+} 
+
 /* ここまで */
 
 /* web.html */
@@ -281,7 +318,7 @@ ul {
 	text-decoration: underline;
 	text-underline-offset: 10px;
 	text-decoration-thickness: 2px;
-}
+} 
 
 /* ここまで */
 
@@ -307,5 +344,66 @@ ul {
 	text-decoration: underline;
 	text-underline-offset: 10px;
 	text-decoration-thickness: 2px;
-}
+} 
 /* ここまで */
+
+/* ヘッダー固定 */
+
+/* nav {
+	width: 100%;
+	padding: 20px 0;
+	text-align: center;
+	position: fixed;
+}
+
+.logo {
+	width: 150px;
+	margin: 0 auto 20px auto;
+}
+
+nav ul {
+	background-color: #000000;
+}
+
+nav ul li {
+	display: inline-block;
+	list-style: none;
+	margin: 20px 30px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: white;
+}
+
+nav .sticky ul {
+	background-color: transparent;
+	font-size: 1.3rem;
+}
+nav .sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #000000;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.6s;
+} */
+
+#nav_menu {
+	width: 100%;
+}
+
+#nav_menu.m_fixed {
+	background-color: #000000;
+	top: 0;
+	left: 0;
+	opacity: 0.8;
+	z-index: 100;
+	padding-left: 70%;
+}
+
+/* ここまで */
+

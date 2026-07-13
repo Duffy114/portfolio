@@ -2,11 +2,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
     <title>portfolio</title>
 </head>
 <body>
-    <header>
+    <!-- <header>
         <div class="div_box" id="div_box">
         <h4 class="header_box">YUKA OSHIMA</h4>
         <ul class="ul_box">
@@ -14,9 +16,37 @@
             <li><a href="#ABOUT_box">ABOUT</a></li>
             <li><a href="#Works1">WORKS</a></li>
         </ul>
+        </div> -->
+
+        <header class="top_logo" id="nav_menu">
+            <nav>
+                <ul>
+                    <li><a href="#div_box">TOP</a></li>
+                    <li><a href="#ABOUT_box">ABOUT</a></li>
+                    <li><a href="#Works1">WORKS</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="background">
+         <h4 class="logo">YUKA<br>OSHIMA</h4>
         </div>
-        <img src="../portfolio/image/top.jpg">
-    </header>
+        <!-- ヘッダー固定 -->
+    <!-- <header>
+     <div class="header">
+        <nav class="navbar">
+            <h4 class="logo">YUKA OSHIMA</h4>
+            <ul class="menu">
+                <li><a href="#div_box">TOP</a></li>
+                <li><a href="#ABOUT_box">ABOUT</a></li>
+                <li><a href="#Works1">WORKS</a></li>
+            </ul>
+        </nav>
+     </div>
+    </header> -->
+     <!-- ここまで -->
+
+        <!-- <img src="../portfolio/image/top.jpg"> 
+    </header> -->
     <main class="main_box">
         <div class="ABOUT_box" id="ABOUT_box">
           <div class="ABOUT_box2">
@@ -39,7 +69,7 @@
               <p class="title">自己PR
               <div class="text2">
                <p>プログラミングの学習を通して、アプリを完成した時の達成感や自分で作った物を形にできる<br>動かせるなどの楽しさを知り、エンジニアになりたいという思いが更に強くなりました</p>
-               <p>そして、エンジニアになることができ、現在は、電子カルテの導入・運用・保守を<br>行なっております。</p>
+               <p>そして、エンジニアになることができ、直近の業務では、電子カルテの導入・運用・保守を<br>行なっておりました。</p>
                <p>自己学習は、Pythonの学習を進めており、今後も様々な言語を学習していきたいと考えております。</p>
                <p>また、オンラインスクール卒業後に作成した制作物もございますので、そちらも見て頂けますと幸いです。</p></p>
               </div>
@@ -88,4 +118,5 @@
             </div>
         </footer>
     </main>
-</body>
+</body> 
+
